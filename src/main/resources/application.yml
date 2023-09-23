@@ -1,0 +1,12 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lotteon2/bitbox-config
+          username: ${GITHUB_USERID}
+          password: ${GITHUB_TOKEN}
