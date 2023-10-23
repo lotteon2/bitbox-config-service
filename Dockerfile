@@ -9,4 +9,4 @@ ENV GITHUB_TOKEN ""
 
 COPY app.jar /app.jar
 
-ENTRYPOINT ["/bin/sh","-c","java -Dspring.profiles.active=${USE_PROFILE} -jar ./app.jar"]
+ENTRYPOINT ["/bin/sh","-c","java -Dspring.profiles.active=${USE_PROFILE} -Duser.timezone=Asia/Seoul -jar ./app.jar"]
